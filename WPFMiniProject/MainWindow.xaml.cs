@@ -44,6 +44,8 @@ namespace WPFMiniProject
                 Addresses = addresses.ToList()
             };
 
+            Save.ToTextFile(person);
+
             firstNameText.Text = "";
             lastNameText.Text = "";
             activeCheckbox.IsChecked = false;
